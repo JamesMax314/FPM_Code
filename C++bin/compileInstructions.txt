@@ -1,0 +1,5 @@
+Inside an msvc x64 cmd run:
+1: cl library.cpp -out:C__bin.lib /MDd
+2: LIB /OUT:C__bin.lib library.obj
+
+/MDd specifies debug build type. add /O2 /Qpar /Qpar-report:1 for speed. see https://docs.microsoft.com/en-us/cpp/parallel/auto-parallelization-and-auto-vectorization?view=vs-2019

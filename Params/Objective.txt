@@ -1,0 +1,5 @@
+Objective,Magnification,NA,Pixel Size x,Pixel Size y,Wave Length,Screen Distance,LED Spacing,Num LED x,Num LED y
+1,10,0.25,1.12e-6,1.12e-6,530e-9,4e-4,5e-4,16,16
+2,10,0.25,1.12e-6,1.12e-6,530e-9,4e-2,5e-4,16,16
+3,10,0.5,1.12e-6,1.12e-6,530e-9,4e-2,5e-4,16,16
+5,10,0.115,1.12e-6,1.12e-6,530e-9,4e-2,5e-3,16,16

@@ -1,0 +1,20 @@
+"C:\Program Files\JetBrains\CLion 2019.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_C_COMPILER=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.22.27905/bin/Hostx64/x64/cl.exe" "-DCMAKE_CXX_COMPILER=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.22.27905/bin/Hostx64/x64/cl.exe" -G "CodeBlocks - NMake Makefiles" D:\MainDrive\University\SummerPlacement\FPM\Code\NewBuild\cTest
+CMake Error at CMakeLists.txt:7 (find_package):
+  By not providing "Findxtensor.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "xtensor", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "xtensor" with any
+  of the following names:
+
+    xtensorConfig.cmake
+    xtensor-config.cmake
+
+  Add the installation prefix of "xtensor" to CMAKE_PREFIX_PATH or set
+  "xtensor_DIR" to a directory containing one of the above files.  If
+  "xtensor" provides a separate development package or SDK, be sure it has
+  been installed.
+
+
+-- Configuring incomplete, errors occurred!
+See also "D:/MainDrive/University/SummerPlacement/FPM/Code/NewBuild/cTest/cmake-build-debug/CMakeFiles/CMakeOutput.log".

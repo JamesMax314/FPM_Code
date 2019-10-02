@@ -1,0 +1,25 @@
+cmake_minimum_required(VERSION 3.14)
+project(cFPM)
+
+set(CMAKE_CXX_STANDARD 14)
+
+FIND_PACKAGE(pybind11 REQUIRED)
+FIND_PACKAGE(FFTW3 REQUIRED)
+FIND_PACKAGE(OpenCV REQUIRED)
+add_subdirectory(include\\dlib-19.17\\dlib-19.17\\dlib dlib_build)
+#FIND_PACKAGE(Eigen3 REQUIRED)
+
+pybind11_add_module(cFPM main.cpp)
+#add_executable(cTestE main.cpp)
+
+include_directories(include)
+include_directories(..\\C++bin)
+target_include_directories(cFPM PUBLIC ${INTERFACE_INCLUDE_DIRECTORIES})
+#target_include_directories(cFPM PUBLIC ${EIGEN3_INCLUDE_DIRS})
+target_include_directories(cFPM PUBLIC ${OpenCV_INCLUDE_DIRS})
+target_include_directories(cFPM PUBLIC ..\\C++bin)
+#target_include_directories(cFPM PUBLIC include\\dlib-19.17\\dlib-19.17)
+target_link_libraries(cFPM PUBLIC FFTW3::fftw3)
+target_link_libraries(cFPM PUBLIC ${OpenCV_LIBS})
+target_link_libraries(cFPM PUBLIC ..\\..\\C++bin\\buildRelease\\C__bin)
+target_link_libraries(cFPM PUBLIC dlib::dlib)
